@@ -21,6 +21,8 @@ const conversionOptions = [
   { value: 'metersToFeet', label: 'Mètres → pieds' },
   { value: 'litersToGallons', label: 'Litres → gallons US' },
   { value: 'gallonsToLiters', label: 'Gallons US → litres' },
+  { value: 'celsiusToFahrenheit', label: 'Degrés Celsius → Fahrenheit' },
+  { value: 'fahrenheitToCelsius', label: 'Degrés Fahrenheit → Celsius' },
 ];
 
 function formatNumber(value) {

@@ -19,6 +19,16 @@ const conversions = {
     to: 'litres',
     convert: (value) => value / 0.2641720524,
   },
+  celsiusToFahrenheit: {
+    from: '°C',
+    to: '°F',
+    convert: (value) => (value * 9) / 5 + 32,
+  },
+  fahrenheitToCelsius: {
+    from: '°F',
+    to: '°C',
+    convert: (value) => ((value - 32) * 5) / 9,
+  },
 };
 
 function convertUnit(type, value) {

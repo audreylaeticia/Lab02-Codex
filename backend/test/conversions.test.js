@@ -18,6 +18,16 @@ test('convertit les gallons US en litres', () => {
   assert.ok(Math.abs(convertUnit('gallonsToLiters', 1).result - 3.785411784) < 1e-8);
 });
 
+test('convertit les degrés Celsius en degrés Fahrenheit', () => {
+  assert.equal(convertUnit('celsiusToFahrenheit', 0).result, 32);
+  assert.equal(convertUnit('celsiusToFahrenheit', 100).result, 212);
+});
+
+test('convertit les degrés Fahrenheit en degrés Celsius', () => {
+  assert.equal(convertUnit('fahrenheitToCelsius', 32).result, 0);
+  assert.equal(convertUnit('fahrenheitToCelsius', 212).result, 100);
+});
+
 test('rejette un type inconnu', () => {
   assert.throws(() => convertUnit('unknown', 1), /non pris en charge/);
 });
