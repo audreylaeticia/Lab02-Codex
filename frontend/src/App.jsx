@@ -92,7 +92,7 @@ export default function App() {
                 Convertisseur d’unités
               </Typography>
               <Typography color="text.secondary">
-                Longueurs et volumes, en quelques secondes.
+                Longueurs, volumes et températures, en quelques secondes.
               </Typography>
             </Box>
 
